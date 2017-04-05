@@ -1,0 +1,701 @@
+@font-face {
+    font-family: "LMRomanSlant10";
+    src: url('../fonts/lmromanslant10-regular-webfont.eot');
+    src: url('../fonts/lmromanslant10-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lmromanslant10-regular-webfont.woff') format('woff'), url('../fonts/lmromanslant10-regular-webfont.ttf') format('truetype'), url('../fonts/lmromanslant10-regular-webfont.svg#latin_modern_roman_slante10Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+Apollo
+========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+/*** Basic layout ***/
+
+body {
+    background-color: #efefef;
+    color: #000;
+    font-family: "LMRomanSlant10", serif;
+    font-size: 16px;
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 100;
+    margin: 0.5em 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.125em;
+    line-height: 1.5625;
+}
+
+.layout {
+    border: 10px solid white;
+    border-bottom: 1px;
+    padding: 10px;
+    max-width: 100%;
+    z-index: 999;
+}
+
+/* ==========================================================================
+Fullpage.js - custom style
+========================================================================== */
+
+.fullpage-wrapper {
+    width: 100% !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+.fp-section {
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.fp-section.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fp-slidesContainer {
+    width: 100% !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+.fp-slide {
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+
+.fp-slide.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.fp-controlArrow.fp-prev,
+.prev {
+    left: 30px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrow-left.png) no-repeat center, #fff;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.fp-controlArrow.fp-next,
+.next {
+    right: 30px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background: url(../img/arrow-right.png) no-repeat center, #fff;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.fp-controlArrow.fp-prev:hover,
+.prev:hover {
+    left: 29px;
+    border: none;
+    width: 54px;
+    height: 54px;
+    background: url(../img/arrow-left.png) no-repeat center, #fff;
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-next:hover,
+.next:hover {
+    right: 29px;
+    border: none;
+    width: 54px;
+    height: 54px;
+    background: url(../img/arrow-right.png) no-repeat center, #fff;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
+
+h1,
+h2 {
+    margin-bottom: 0;
+}
+
+h1,
+h1 + p {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.vertical,
+.horizontal {
+    display: none;
+}
+
+/* ==========================================================================
+About
+========================================================================== */
+
+.about {
+    overflow: auto;
+    max-width: 100%;
+}
+
+img[alt="DSLR"] {
+    width: 90%;
+}
+
+.social-icon {
+    z-index: 999;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    box-sizing: content-box;
+    padding: 8px;
+    margin: 10px 4px;
+    background-color: rgba(2, 2, 2, 0.4);
+}
+
+.social-icon[alt="Facebook"] {
+    width: 8px;
+    padding: 8px 13px;
+}
+
+.social-icon[alt="Twitter"] {
+    height: 14px;
+    padding: 10px 8px;
+}
+
+.social-icon[alt="Pinterest"] {
+    width: 14px;
+    padding: 8px 10px;
+}
+
+.social-icon:hover {
+    background-color: black;
+}
+
+h2 {
+    position: relative;
+}
+
+hr {
+    color: black;
+    background-color: black;
+    border: 0 none;
+    height: 1px;
+    width: 60px;
+    display: inline-block;
+    box-sizing: content-box;
+    margin-right: 3%;
+    position: relative;
+    top: .6em;
+}
+
+/* ==========================================================================
+Showcase
+========================================================================== */
+
+.showcase img {
+    width: 100%;
+}
+
+.showcase {
+    position: relative;
+    background-color: #fff;
+}
+
+.overlay img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 2%;
+    top: 0;
+    z-index: 2;
+}
+
+.showcase .slide {
+    padding: 0;
+}
+
+/* ==========================================================================
+Letter L
+========================================================================== */
+
+.letter-l .container {
+    width: 100%;
+    padding: 2%;
+}
+
+.letter-l h2 {
+    line-height: 1;
+}
+
+img[alt="Bridge"] {
+    width: 100%;
+}
+
+/* ==========================================================================
+Carousel
+========================================================================== */
+
+.showcase_container{
+    position: relative;
+}
+
+.showcase2 {
+    padding-top: 10%;
+}
+
+.carousel {
+    width: 800px;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.carousel img {
+    width: 500px;
+    display: hidden;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 45%;
+    z-index: 3;
+}
+
+/* ==========================================================================
+Contact
+========================================================================== */
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 585px;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 1px solid #020202;
+    font-family: 'Raleway', sans-serif;
+    font-size: .875em;
+    line-height: 1.5625;
+    padding: 5px;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+input[type="email"],
+input[type="text"] {
+    box-sizing: padding-box;
+    width: 49%;
+    margin: 2% 0;
+}
+
+input[type="email"] {
+    float: left;
+}
+
+input[type="text"] {
+    float: right;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #e2e2e2;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    color: #e2e2e2;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 2% 0 5%;
+}
+
+input[type="submit"]:hover {
+    background-color: #606060;
+    color: #fff;
+}
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+
+@media only screen and (min-width: 320px) and (max-width: 559px) {
+    .layout {
+        background-color: #efefef;
+        border: 1.25em solid white;
+        border-bottom: 1px;
+    }
+
+    h1,
+    h2 {
+        text-align: left;
+        font-size: 3.125em;
+    }
+
+    .vertical {
+        display: inline-block;
+        height: 40px;
+        width: 2px;
+        border-left: 1px solid black;
+    }
+
+    header {
+        background: url(../img/letter-a.png) no-repeat, url(../img/header.png) no-repeat, #efefef;
+        background-size: contain, 60%;
+        background-position: bottom left 5%, bottom;
+    }
+
+    .layout:first-child {
+        padding-bottom: 40%;
+    }
+
+    .about {
+        background: url(../img/letter-p.png) no-repeat bottom left, #EFEFEF;
+        background-size: contain;
+    }
+
+    .social-icons {
+        float: right;
+        padding-right: 5%;
+    }
+
+    .social-icon {
+        float: left;
+    }
+
+    .letter-l {
+        background: url(../img/letter-l.png) no-repeat bottom left 5%, #EFEFEF;
+        background-size: contain;
+    }
+
+    .contact {
+        background: url(../img/letter-o.png) no-repeat bottom left 5%, #EFEFEF;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 430px) {
+    img[alt="DSLR"] {
+        width: 50%;
+        float: left;
+    }
+
+    .social-icons {
+        float: right;
+        padding-right: 5%;
+    }
+
+    .social-icon {
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 560px) {
+    .layout {
+        border: 1.75em solid white;
+        border-bottom: 1px;
+    }
+
+    header {
+        background: url(../img/letter-a.png) no-repeat, url(../img/header.png) no-repeat, #efefef;
+        background-size: contain, 60%;
+        background-position: bottom left 5%, bottom right;
+    }
+
+    .vertical {
+        display: inline-block;
+        height: 50px;
+        width: 1px;
+        border-left: 1px solid black;
+    }
+
+    .horizontal {
+        display: inline-block;
+        height: 1.3em;
+        width: 55px;
+        border-top: 1px solid black;
+    }
+
+    img[alt="DSLR"] {
+        float: left;
+        width: 40%;
+        padding: 2%;
+    }
+
+    .about {
+        background: url(../img/letter-p.png) no-repeat bottom left 5%, #EFEFEF;
+        background-size: contain;
+    }
+
+    .header-main {
+        padding: 9% 8%;
+        width: 60%;
+    }
+
+    h1,
+    h2 {
+        text-align: left;
+        font-size: 3.125em;
+        line-height: 1.4;
+    }
+
+    .about h2 {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .social-icon {
+        margin: 1em 4px;
+    }
+
+    .letter-l {
+        background: url(../img/letter-l.png) no-repeat bottom left 5%, #EFEFEF;
+        background-size: contain;
+    }
+
+    .letter-l .container {
+        float: none;
+        width: 100%;
+    }
+
+    img[alt="Bridge"] {
+        width: 50%;
+        float: right;
+        margin: 2%;
+    }
+
+    .contact {
+        background: url(../img/letter-o.png) no-repeat bottom left 5%, #EFEFEF;
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .layout,
+    .letter-l,
+    .contact {
+        min-height: 100vh;
+    }
+
+    header {
+        background: url(../img/letter-a.png) no-repeat, url(../img/header.png) no-repeat, #efefef;
+        background-size: contain, 60%;
+        background-position: bottom left 5%, bottom right;
+    }
+
+    .header-main,
+    .container {
+        padding: 9% 8%;
+        width: 60%;
+    }
+
+    img[alt="DSLR"] {
+        width: 35%;
+        padding-right: 0;
+    }
+
+    .container {
+        float: right;
+        width: 65%;
+        padding: 4% 3%;
+    }
+
+    .letter-l .container {
+        float: left;
+        width: 40%;
+        margin: 5%;
+    }
+
+    img[alt="Bridge"] {
+        width: 40%;
+        float: left;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    body {
+        display: none
+    }
+
+    body[class*="fp-viewing-"] {
+        display: block
+    }
+
+    html {
+        overflow-y: hidden;
+    }
+
+    body:before,
+    body:after {
+        content: "";
+        position: fixed;
+        background: #fff;
+        left: 0;
+        right: 0;
+        height: 1.75em;
+        z-index: 1000;
+    }
+
+    body:before {
+        top: 0;
+    }
+
+    body:after {
+        bottom: 0;
+    }
+
+    body {
+        border-left: 1.75em solid #fff;
+        border-right: 1.75em solid #fff;
+    }
+
+    .layout {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: url(../img/letter-a.png) no-repeat, url(../img/header.png) no-repeat, #efefef;
+        background-size: contain, contain;
+        background-position: bottom left, bottom right;
+    }
+
+    .header-main {
+        padding: 8%;
+        width: 62%;
+    }
+
+    .social-icons {
+        float: none;
+    }
+
+    img[alt="Bridge"] {
+        width: 40%;
+        float: left;
+        margin-top: 6%;
+    }
+}
+
+/* ==========================================================================
+Helper classes
+========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
