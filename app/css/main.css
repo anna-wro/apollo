@@ -480,6 +480,10 @@ Media Queries
         background: url(../img/letter-o.png) no-repeat bottom left 5%, #EFEFEF;
         background-size: contain;
     }
+
+    form {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (min-width: 430px) {
